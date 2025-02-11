@@ -1,0 +1,111 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Roboto", "Arial";
+}
+h1 {
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+form {
+  max-width: 600px;
+  padding: 30px;
+  margin: 10px auto;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+}
+
+form div.form-group {
+  margin-top: 30px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.form-group label span {
+  color: red;
+}
+.form-group input {
+  padding: 20px;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  border: 1px solid grey;
+  font-size: 18px;
+  color: #000;
+}
+textarea {
+  padding: 20px;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  border: 1px solid grey;
+  font-family: "Roboto";
+  font-size: 18px;
+}
+form button {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+select {
+  padding: 20px;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  border: 1px solid grey;
+  font-size: 18px;
+  color: #000;
+}
+.checkbox {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.checkbox-group label {
+  margin-top: 10px;
+  margin-left: 5px;
+  display: block;
+}
+.checkbox-group input {
+  margin-right: 15px;
+  padding-bottom: 3px;
+  width: 20px;
+  height: 20px;
+}
+.radio {
+  font-size: 18px;
+  margin-top: 30px;
+}
+.radio-group {
+  display: block;
+  margin-top: 10px;
+}
+.radio-group label {
+  display: block;
+}
+.radio-group input {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}

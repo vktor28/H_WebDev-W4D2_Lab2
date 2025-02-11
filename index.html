@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+<div class="container">
+    
+    <form id="contact" method="get" action="recibido.html">
+        <h1>Realiza tu pedido</h1>
+        <div class="form-group">
+            <label for="tratamiento"></label>
+            <select id="tratamiento" name="tratamiento">
+                <option></option>
+                <option value="Sr">Sr</option>
+                <option value="Sra">Sra</option>
+            </select>
+        </div>
+        <div class="form-group">
+        <label for="name">Nombre y apellido</label>
+        <input id="name" name="name" type="text" placeholder="indica tu nombre y apellido" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email<span>*</span></label>
+            <input id="email" name="email" type="email" placeholder="indica tu correo electrónico" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono Móvil<span>*</span></label>
+            <input id="telefono" name="telefono" type="number" min="600000000" max="799999999" required>
+        </div>
+        <div class="form-group">
+            <label for="pizza">Elige una pizza</label>
+            <select id="tratamiento" name="tratamiento">
+                <option value="margarita">Margarita</option>
+                <option value="carbonara">Carbonara</option>
+                <option value="Barbacoa">Barbacoa</option>
+                <option value="4 quesos">4 Quesos</option>
+                <option value="peperoni">Peperoni</option>
+                <option value="diavola">Diavola</option>
+            </select>
+        </div>
+        <div class="checkbox">
+            <label for="asunto">Extras</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="extras[]" value="bacon"/>Bacon</label>
+                <label><input type="checkbox" name="extras[]" value="cebolla"/>Cebolla</label>
+                <label><input type="checkbox" name="extras[]" value="carne"/>Carne</label>
+                <label><input type="checkbox" name="extras[]" value="huevo"/>Huevo</label>
+              </div>
+        </div>
+        <div class="radio">
+            Tipo de envío
+            <div class="radio-group">
+                <label><input type="radio" name="envio" value="domicilio">Envio a domicilio </label>
+                  <label><input type="radio" name="envio" value="recogida">Recogida en tienda</label>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" rows="8" maxlength="150" placeholder="Escribe aquí tus comentarios, máx 150 caracteres"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Enviar</button>
+        </div>
+
+    </form>
+</div>
+</body>
+</html
